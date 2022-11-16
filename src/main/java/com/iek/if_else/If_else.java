@@ -28,6 +28,9 @@ public class If_else {
         
         System.out.println("y is greater than x");
        printStat();
+       
+       System.out.println(getAge());
+       System.out.println(getSalary());
     }
    static void printStat() {
    
@@ -42,10 +45,10 @@ public class If_else {
         salary=console.nextDouble();
         System.out.println("Name:"+name+"Age"+age+"Gender"+gender+"Salary:"+salary);
     }
-   int getAge(){
+ static public int getAge(){
        return age;
    }
-   double getSalary(){
+ static public  double getSalary(){
        return salary;
    }
 }
