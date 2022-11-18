@@ -17,6 +17,7 @@ public class If_else {
       static public char gender;
      static  public double salary;
      static public boolean adult;
+     static public boolean female;
     public static void main(String[] args) {
         int x=20;
         int y=18;
@@ -44,7 +45,7 @@ public class If_else {
         gender=console.next().charAt(0);
         System.out.println("Enter salary:");
         salary=console.nextDouble();
-        System.out.println("Name:"+name+"Age"+age+"Gender"+gender+"Salary:"+salary);
+        System.out.println("Name:"+name+"Age:"+getAge()+"Gender:"+getGender()+"Salary:"+getSalary());
     }
  static public int getAge(){
        return age;
@@ -52,6 +53,17 @@ public class If_else {
  static public  double getSalary(){
        return salary;
    }
+ static char getGender(){
+     return gender;
+ }
+ static boolean isFemale(){
+     if(getGender()=="F"){
+         female=true;
+     }else{
+         female=false;
+     }
+     return female;
+ }
  static boolean isAdult(){
      if(age>18){
          adult=true;
