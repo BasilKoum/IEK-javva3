@@ -16,6 +16,7 @@ public class If_else {
      static  public int age;
       static public char gender;
      static  public double salary;
+     static public boolean adult;
     public static void main(String[] args) {
         int x=20;
         int y=18;
@@ -51,4 +52,12 @@ public class If_else {
  static public  double getSalary(){
        return salary;
    }
+ static boolean isAdult(){
+     if(age>18){
+         adult=true;
+     }else{
+         adult=false;
+     }
+     return adult;
+ }
 }
