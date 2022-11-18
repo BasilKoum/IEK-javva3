@@ -19,20 +19,15 @@ public class If_else {
      static public boolean adult;
      static public boolean female;
     public static void main(String[] args) {
-        int x=20;
-        int y=18;
-        
-        if (x>y);
-        
-        System.out.println("x is greater than y");
-        
-        if (y>x);
-        
-        System.out.println("y is greater than x");
+       Employee emp1=new Employee(x:"Costas", y:"M");
+       Employee emp2=new Employee(x:"Maria",y:"F");
+       emp1.employeeInfo(emp1);
+       
+       
+       
        printStat();
        
-       System.out.println(getAge());
-       System.out.println(getSalary());
+
     }
    static void printStat() {
    
@@ -71,5 +66,8 @@ public class If_else {
          adult=false;
      }
      return adult;
+ }
+static void setSalary(double x){
+    salary=x;
  }
 }
